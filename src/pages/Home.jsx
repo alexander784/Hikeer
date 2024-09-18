@@ -1,6 +1,7 @@
 import React from 'react';
 import Hikeer from '../assets/Hikeer.avif';
 import Hikeer2 from '../assets/Hikeer2.avif';
+import ExploreDestinations from './ExploreDestination';
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <ExploreDestinations />
 
       <footer className="bg-gray-900 text-white py-8">
         <div className="text-center">
