@@ -24,7 +24,7 @@ const testimonialData = [
 
 const Testimonials = () => {
     return (
-        <div className="bg-gray-100 py-8">
+        <div className="bg-white py-8">
             <h2 className="text-center text-3xl font-semibold mb-8">Testimonials</h2>
             <div className="max-w-6xl mx-auto flex flex-wrap justify-center">
                 {testimonialData.map((testimonial, index) => (
