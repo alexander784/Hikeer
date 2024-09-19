@@ -1,7 +1,8 @@
 import React from 'react';
 import Hikeer from '../assets/Hikeer.avif';
 import Hikeer2 from '../assets/Hikeer2.avif';
-import ExploreDestinations from './ExploreDestination';
+import ExploreDestinations from '../components/ExploreDestination';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
       </div>
     </div>
     <ExploreDestinations />
+    <Testimonials />
 
       <footer className="bg-gray-900 text-white py-8">
         <div className="text-center">
