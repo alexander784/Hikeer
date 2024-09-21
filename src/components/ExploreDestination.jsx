@@ -12,7 +12,7 @@ const destinations = [
   {
     id: 1,
     image: Ruwenzori,
-    title: 'Ruwenzori',
+    title: 'Biking Hells Gate',
     description: 'Description for destination 1.'
   },
   {

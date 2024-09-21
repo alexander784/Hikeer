@@ -8,7 +8,7 @@ const testimonialData = [
     {
         name: 'John Doe',
         photo: headshot, 
-        feedback: 'This is an amazing product! Highly recommend to everyone.',
+        feedback: 'The landscape and animals were amazing. If you’re an avid cyclist it’s well worth it. So much fun!.',
     },
     {
         name: 'Jane Smith',
