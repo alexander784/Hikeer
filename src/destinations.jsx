@@ -3,12 +3,13 @@ import Ruwenzori2 from './assets/Ruwenzori2.avif';
 import slider1 from './assets/slider1.avif';
 import slider2 from './assets/slider2.avif';
 import slider3 from './assets/slider3.avif';
+import chakamt from './assets/Chakamt.jpeg';
 
 
 const destinations = [
     {
       id: 1,
-      image: Ruwenzori,
+      image: chakamt,
       title: 'Biking Hells Gate',
       description: 'Description for destination 1.'
     },
@@ -21,7 +22,7 @@ const destinations = [
     {
       id: 3,
       image: slider1,
-      title: 'Destination 3',
+      title: 'Mt Longonot',
       description: 'Description for destination 3.'
     },
     {
