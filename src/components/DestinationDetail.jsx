@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import Birds from '../pages/Chaka';
 import destinations from '../destinations';
+import Hells from '../pages/Hells';
 
 
 const DestinationDetail = () => {
@@ -15,11 +16,11 @@ const DestinationDetail = () => {
     switch(destination.id) {
         case 5:
             return <Birds />
-    }
+        case 1:
+            return <Hells />
 
-    // if (destination.id === 5) {
-    //     return <Birds />
-    // }
+    } 
+    
 
   return (
     <div>DestinationDetail</div>

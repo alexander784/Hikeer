@@ -33,7 +33,7 @@ const destinations = [
     {
       id: 5,
       image: slider3,
-      title: 'Birds',
+      title: 'Chaka Ranch',
       description: 'Description for destination 5.'
     },
   ];
