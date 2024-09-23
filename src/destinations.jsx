@@ -16,7 +16,7 @@ const destinations = [
     {
       id: 2,
       image: Ruwenzori2,
-      title: 'Chaka Ranch Biking',
+      title: 'Mt Kenya',
       description: 'Description for destination 2.'
     },
     {

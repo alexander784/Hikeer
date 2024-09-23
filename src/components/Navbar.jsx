@@ -1,12 +1,13 @@
 import React from 'react';
+import { VscAccount } from "react-icons/vsc";
 
 const Navbar = () => {
   return (
-    <nav className='flex fixed w-full bg-red-300  items-center justify-between p-4'>
+    <nav className='flex fixed w-full bg-black  items-center justify-between p-4'>
       <div className='flex items-center'>
-        <div className='bg-red-400 p-2 rounded'>
-          <span className='text-white text-lg font-bold'>Brand</span>
-        </div>
+        {/* <div className='bg-red-400 p-2 rounded'> */}
+          <span className='text-white text-lg font-bold'>Hikeers</span>
+        {/* </div> */}
       </div>
       <div className='flex space-x-4'>
         <a href="/" className='text-white hover:text-gray-700'>Home</a>
@@ -15,8 +16,9 @@ const Navbar = () => {
         <a href="#" className='text-white hover:text-gray-700'>Contact</a>
       </div>
       <div>
-        <button className='bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded'>
-          Sign In
+        <button className='text-white'>
+          <VscAccount className='white' />
+          Account
         </button>
       </div>
     </nav>

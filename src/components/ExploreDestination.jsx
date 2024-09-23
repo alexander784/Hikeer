@@ -32,7 +32,7 @@ const ExploreDestinations = () => {
 
   return (
     <div className="relative py-16 px-8 bg-orange-950">
-      <h2 className="text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>
+      <h2 className="text-white text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>
       <div className="relative z-10">
         <Slider {...sliderSettings}>
           {
