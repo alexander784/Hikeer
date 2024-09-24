@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className='flex fixed w-full bg-black  items-center justify-between p-4'>
       <div className='flex items-center'>
-        {/* <div className='bg-red-400 p-2 rounded'> */}
-          <span className='text-white text-lg font-bold'>Hikeers</span>
+        {/* <div className='bg-red-400 p-2 ro`unded'> */}
+          <a href='/' className='text-white text-lg font-bold'>Hikeers</a>
         {/* </div> */}
       </div>
       <div className='flex space-x-4'>

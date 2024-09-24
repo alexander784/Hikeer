@@ -3,10 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css'; 
 import destinations from '../destinations';
-
 import { useNavigate } from 'react-router-dom';
-
-
 
 const ExploreDestinations = () => {
   const [selectedDestination, setSelectedDestination] = useState(null);
@@ -31,25 +28,26 @@ const ExploreDestinations = () => {
   };
 
   return (
-    <div className="relative py-16 px-8 bg-orange-950">
-      <h2 className="text-white text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>
+    <div className="relative py-16 px-8 bg-white">
+      <h2 className="text-black text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>
       <div className="relative z-10">
         <Slider {...sliderSettings}>
-          {
-            destinations.map(destination => (
-              <div
-                key={destination.id}
-                className="relative cursor-pointer"
-                onClick={() => handleImageClick(destination)}
-              >
+          {destinations.map((destination) => (
+            <div
+              key={destination.id}
+              className="relative cursor-pointer"
+              onClick={() => handleImageClick(destination)}
+            >
+              <div className="relative">
                 <img
                   src={destination.image}
                   alt={destination.title}
-                  className="w-full h-60 object-cover rounded-lg shadow-md"
+                  className="w-60 h-80 object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-x-0 top-0 bg-black bg-opacity-50 text-white p-2">
                   <h3 className="text-xl font-bold">{destination.title}</h3>
                 </div>
+              </div>
             </div>
           ))}
         </Slider>
