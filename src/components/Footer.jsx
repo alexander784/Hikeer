@@ -8,11 +8,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="text-sm">
+            <p className="text-sm"> hikeers
             </p>
           </div>
 
-          {/* Contact Section */}
           <div>
             <h2 className="text-lg font-semibold mb-4">Contact</h2>
             <ul className="text-sm space-y-2">
