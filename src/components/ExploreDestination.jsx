@@ -25,8 +25,9 @@ const ExploreDestinations = () => {
     arrows: true,
     centerMode: true,
     centerPadding: '0', 
-  };
 
+    
+  }
   return (
     <div className="relative py-16 px-8 bg-white">
       <h2 className="text-black text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>

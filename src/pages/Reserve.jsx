@@ -19,7 +19,6 @@ const Reserve = () => {
     e.preventDefault();
     console.log('Reservation Details:', formData);
     alert('Your reservation has been submitted!');
-    // Here, you can add your logic to handle the reservation submission, such as an API call.
   };
 
   return (
@@ -35,7 +34,7 @@ const Reserve = () => {
             onChange={handleChange}
             required
             className="w-full p-2 border border-gray-300 rounded"
-            placeholder="Enter your name"
+            placeholder="Enter name"
           />
         </div>
 
@@ -48,7 +47,7 @@ const Reserve = () => {
             onChange={handleChange}
             required
             className="w-full p-2 border border-gray-300 rounded"
-            placeholder="Enter your email"
+            placeholder="Enter email"
           />
         </div>
 
