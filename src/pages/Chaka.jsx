@@ -1,109 +1,61 @@
 import React from 'react';
-import chaka from '../assets/chaka.jpeg';
-import Navbar from '../components/Navbar';
+import navimages from '../assets/navimages.jpeg';
+import hells from '../assets/hells.jpeg';
 import Footer from '../components/Footer';
-import Ziplining from '../assets/Ziplining.jpeg';
-import archery from '../assets/archery.jpeg';
-import quad from '../assets/quad.jpeg';
+import cycing from '../assets/cycing.jpeg';
+import Biking22 from '../assets/Biking22.avif';
+import biking1 from '../assets/biking1.avif';
 
 const Chaka = () => {
   return (
     <>
-    <Navbar />
-    <div className="flex ">
-      <div className="w-1/2 p-4">
+    <div className='relative'>
+      <img 
+        src={navimages} 
+        alt='top' 
+        className='w-full h-60 object-cover'
+      />
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+        <h1 className='text-white text-3xl font-bold bg-opacity-50 px-4 py-2 rounded'>
+         Chaka Ranch
+        </h1>
+      </div>
+    </div>
+
+    <div className='flex flex-col md:flex-row-reverse p-6'>
+      <div className="md:w-1/2 p-4">
+        <h1 className='text-2xl font-bold mb-4 text-center'>About</h1>
+        <p className='mb-4 font-serif'></p>
+        <p className='font-serif'>The Chaka Ranch Leisure Park is an entertainment facility in Kiganjo, Nyeri County. Open DAILY including public holidays and only a two hour drive from Nairobi City Centre, the Chaka Ranch Leisure Park is a beautiful and intimate haven for outdoor lovers</p>
+      </div>
+      <div className="md:w-1/2 p-4">
         <img 
-          src={chaka} 
-          alt="Chaka" 
-          className="w-full h-auto" 
+          src={biking1} 
+          alt="Hells Gate" 
+          className="w-full h-auto object-cover rounded-lg shadow-lg" 
         />
       </div>
-      <div className="w-1/2 p-4">
-        <h2 className="text-xl font-bold mb-4">Reservation Form</h2>
-        <form>
-          <div className="mb-4">
-            <label className="block mb-2" htmlFor="name">Name:</label>
-            <input 
-              type="text" 
-              id="name" 
-              className="border rounded w-full py-2 px-3"
-              required 
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block mb-2" htmlFor="date">Date:</label>
-            <input 
-              type="date" 
-              id="date" 
-              className="border rounded w-full py-2 px-3"
-              required 
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block mb-2" htmlFor="time">Time:</label>
-            <input 
-              type="time" 
-              id="time" 
-              className="border rounded w-full py-2 px-3"
-              required 
-            />
-          </div>
-          <button 
-            type="submit" 
-            className="bg-blue-500 text-white py-2 px-4 rounded"
-          >
-            Reserve
-          </button>
-        </form>
+    </div>
+    
+    <div className='flex flex-col md:flex-row-reverse p-6'>
+      <div className="md:w-1/2 p-4">
+        <img 
+          src={Biking22} 
+          alt="Wonder of Hells Gate" 
+          className="w-full h-auto object-cover rounded-lg shadow-lg" 
+        />
+      </div>
+      <div className="md:w-1/2 p-4">
+        <h2 className='text-2xl font-bold mb-4'>Chaka Ranch Wonders</h2>
+        <h1 className='text-orange-800'>Quad Biking</h1>
+        <p className='font-serif'>adrenalin-inducing thrill-ride of a quad bike ride</p><br/>
+
+        <h1 className='text-orange-800'>Gun Games</h1>
+        <p className='font-serif'>You’ll feel like a real cowboy, wearing chaps, a slick cowboy hat, and clicking your boots as you become a pro gunslinger. Pick your favorite weapon, and engage in a high-risk shootout in our challenges! </p>
       </div>
     </div>
-    <div className='flex flex-col items-center justify-center h-screen'>
-  <div className='p-6 rounded-lg shadow-md bg-white text-center'>
-    <h1 className='text-2xl font-bold mb-4'>Exciting Experiences at Chaka Ranch</h1>
-    <p className='text-lg text-gray-700 mb-4'>
-      Dive into the thrill of outdoor adventures with hiking and biking, 
-      complemented by exhilarating motocross rides, the art of archery, tranquil sundowners, and authentic bush dinners. 
-      We also offer a variety of engaging activities, including pool games and board games, to enrich your stay.
-    </p>
-    <p className='text-lg text-black'>
-      Let us help you create unforgettable memories in this serene and captivating environment.
-    </p>
-  </div>
-  
-  <div className='grid grid-cols-3 gap-6 mt-6'>
-    <div className='text-center'>
-      <img 
-        src={Ziplining}
-        alt='Ziplining Experience'
-        className='w-full h-auto object-cover rounded-lg shadow-md max-w-4xl'
-      />
-      <h2 className='text-xl font-bold mt-4'>Ziplining</h2>
-    </div>
 
-    <div className='text-center'>
-      <img 
-        src={quad}
-        alt='Motocross Adventure'
-        className='w-full h-auto object-cover rounded-lg shadow-md max-w-4xl'
-      />
-      <h2 className='text-xl font-bold mt-4'>Quad Biking</h2>
-    </div>
-
-    <div className='text-center'>
-      <img 
-        src={archery}
-        alt='Archery Practice'
-        className='w-full h-auto object-cover rounded-lg shadow-md max-w-4xl'
-      />
-      <h2 className='text-xl font-bold mt-4'>Archery</h2>
-    </div>
-  </div>
-</div>
-
-
-
-   <Footer/>
-
+    <Footer />
     </>
   );
 }
