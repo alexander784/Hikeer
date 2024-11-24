@@ -16,6 +16,7 @@ const Reserve = () => {
   };
 
   const handleSubmit = (e) => {
+    // Nice!
     e.preventDefault();
     console.log('Reservation Details:', formData);
     alert('Your reservation has been submitted!');
