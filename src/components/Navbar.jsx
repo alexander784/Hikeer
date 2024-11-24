@@ -11,6 +11,7 @@ const Navbar = () => {
       </div>
       <div className='flex space-x-4'>
         <a href="/" className='text-white hover:text-gray-700'>Home</a>
+        {/* This href looks invalid: look into `Link` from "react-router" */}
         <a href="" className='text-white hover:text-gray-700'>About</a>
         <a href="/exploredestination" className='text-white hover:text-gray-700'>Services</a>
         <a href="footer" className='text-white hover:text-gray-700'>Contact</a>

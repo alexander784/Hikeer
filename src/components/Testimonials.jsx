@@ -4,18 +4,21 @@ import headshot from '../assets/headshot.jpeg';
 import headshot2 from '../assets/headshot2.jpeg';
 
 
-const testimonialData = [
+const TESTIMONIALS_DATA = [
     {
+        id: "1",
         name: 'John Doe',
-        photo: headshot, 
+        photo: headshot,
         feedback: 'The landscape and animals were amazing. If you’re an avid cyclist it’s well worth it. So much fun!.',
     },
     {
+        id: "2",
         name: 'Jane Smith',
         photo: headshot1,
         feedback: 'Fantastic service and support. Very satisfied!',
     },
     {
+        id: "3",
         name: 'Alice Johnson',
         photo: headshot2,
         feedback: 'A truly transformative experience. Excellent quality!',
@@ -27,11 +30,11 @@ const Testimonials = () => {
         <div className="bg-white py-8">
             <h2 className="text-center text-3xl font-semibold mb-8">Testimonials</h2>
             <div className="max-w-6xl mx-auto flex flex-wrap justify-center">
-                {testimonialData.map((testimonial, index) => (
-                    <div key={index} className="bg-white p-6 m-4 rounded-lg shadow-md max-w-xs text-center">
-                        <img 
+                {TESTIMONIALS_DATA.map((testimonial, index) => (
+                    <div key={testimonial.id} className="bg-white p-6 m-4 rounded-lg shadow-md max-w-xs text-center">
+                        <img
                             src={testimonial.photo || 'https://via.placeholder.com/150'}
-                            alt={`${testimonial.name}`} 
+                            alt={`${testimonial.name}`}
                             className="w-16 h-16 rounded-full mx-auto mb-4"
                         />
                         <h3 className="text-lg font-semibold">{testimonial.name}</h3>

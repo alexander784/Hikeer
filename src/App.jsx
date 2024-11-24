@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ExploreDestinations from './components/ExploreDestination';
-import Birds from './pages/Chaka';
 import DestinationDetail from './components/DestinationDetail';
 import Reserve from './pages/Reserve';
 
@@ -16,9 +15,7 @@ function App() {
       <Route path='/destinations' element={<ExploreDestinations />} />
       <Route path='/destinations/:id' element={<DestinationDetail />}/>
       <Route path='/reserve' element={<Reserve />} />
-      <Route path='/exploredestination' element={<ExploreDestinations />} />
-      
-      
+      <Route path='/explore-destination' element={<ExploreDestinations />} />
     </Routes>
     </Router>
   );
