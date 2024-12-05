@@ -16,10 +16,10 @@ const Navbar = () => {
         <a href="footer" className='text-white hover:text-gray-700'>Contact</a>
       </div>
       <div>
-        <button className='text-white'>
+        <a href='/signin' className='text-white'>
           <VscAccount className='white' />
           Account
-        </button>
+        </a>
       </div>
     </nav>
   );

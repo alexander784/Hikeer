@@ -6,6 +6,7 @@ import ExploreDestinations from './components/ExploreDestination';
 import Birds from './pages/Chaka';
 import DestinationDetail from './components/DestinationDetail';
 import Reserve from './pages/Reserve';
+import Signin from './components/Signin';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/destinations/:id' element={<DestinationDetail />}/>
       <Route path='/reserve' element={<Reserve />} />
       <Route path='/exploredestination' element={<ExploreDestinations />} />
+      <Route path='/signin' element={<Signin />}/>
       
       
     </Routes>
