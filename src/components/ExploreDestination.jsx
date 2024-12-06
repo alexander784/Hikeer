@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'; 
 import destinations from '../destinations';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const ExploreDestinations = () => {
   const [selectedDestination, setSelectedDestination] = useState(null);
@@ -29,6 +30,7 @@ const ExploreDestinations = () => {
     
   }
   return (
+    <>
     <div className="relative py-16 px-8 bg-white">
       <h2 className="text-black text-3xl font-bold text-center mb-8">Explore Our Destinations</h2>
       <div className="relative z-10">
@@ -61,6 +63,8 @@ const ExploreDestinations = () => {
         </div>
       )}
     </div>
+    </>
+
   );
 };
 

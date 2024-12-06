@@ -11,7 +11,7 @@ import Signin from './components/Signin';
 function App() {
   return (
     <Router>
-    <Navbar />
+    <Navbar className="fixed"/>
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/destinations' element={<ExploreDestinations />} />
