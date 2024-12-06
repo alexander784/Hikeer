@@ -6,7 +6,7 @@ const Signin = () => {
   return (
     <div className='flex justify-center items-center min-h-screen bg-gray-100'>
       <div className='bg-white p-8 rounded-lg shadow-lg w-96'>
-      <h1>Login</h1>
+      <h1 className='text-center text-xl'>Login</h1>
       <form>
       <input type='email' placeholder='Email' className='w-full p-2 border border-gray-300 rounded'
       />
@@ -16,7 +16,8 @@ const Signin = () => {
         Sign In
       </button>
     </form>
-    <h1>Login with Google</h1>
+    <h1 className='text-center text-black'>Login with Google</h1>
+
     <GoogleLogin
        onSuccess={credentialResponse => {
         console.log(credentialResponse);
