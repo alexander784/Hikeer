@@ -1,7 +1,11 @@
 import React from 'react';
 import { VscAccount } from "react-icons/vsc";
+import { useAuth } from '../Context/AuthContext';
 
 const Navbar = () => {
+
+  const {userName, logout } = useAuth();
+
   return (
     <nav className='flex fixed w-full bg-black  items-center justify-between p-4'>
       <div className='flex items-center'>
@@ -16,6 +20,7 @@ const Navbar = () => {
         <a href="footer" className='text-white hover:text-gray-700'>Contact</a>
       </div>
       <div>
+        {userName ? `${userName}` : 'please log in'}
         <a href='/signin' className='text-white'>
           <VscAccount className='white' />
           Account
