@@ -7,10 +7,12 @@ import Birds from './pages/Chaka';
 import DestinationDetail from './components/DestinationDetail';
 import Reserve from './pages/Reserve';
 import Signin from './components/Signin';
+import { AuthProvider } from './Context/AuthContext';
 
 function App() {
   return (
     <Router>
+      <AuthProvider>
     <Navbar className="fixed"/>
     <Routes>
       <Route path='/' element={<Home />}/>
@@ -19,9 +21,8 @@ function App() {
       <Route path='/reserve' element={<Reserve />} />
       <Route path='/exploredestination' element={<ExploreDestinations />} />
       <Route path='/signin' element={<Signin />}/>
-      
-      
     </Routes>
+    </AuthProvider>
     </Router>
   );
 }

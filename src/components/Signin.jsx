@@ -1,12 +1,12 @@
 import React from 'react';
-import { GoogleLogin } from '@react-oauth/google';
-import { useAuth } from '../Context/AuthContext';
-
+// import { GoogleLogin } from '@react-oauth/google';
+import { AuthProvider, useAuth } from '../Context/AuthContext';
+import GoogleLogin from './GoogleLogin';
 
 const Signin = () => {
   const {login} = useAuth();
 
-  const handleGoogleSuccess = () => {
+  const handleGoogleSuccess = (credentialResponse) => {
     const user = credentialResponse?.credential;
     if(user) {
       login(user);
@@ -24,7 +24,7 @@ const Signin = () => {
       const name = email.split('@')[0]
       login(name);
       console.log('logged in with email', name);
-      
+
     }
   }
   return (
@@ -42,14 +42,7 @@ const Signin = () => {
         </form>
        <h1 className='text-center text-black'>Login with Google</h1>
 
-        <GoogleLogin
-          onSuccess={credentialResponse => {
-            console.log(credentialResponse);
-            }}
-            onError={() => {
-                console.log('Login Failed');
-            }}
-          />
+       {/* <GoogleLogin /> */}
     </div>
     </div>
 
