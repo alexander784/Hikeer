@@ -29,14 +29,12 @@ class LoginSerializer(serializers.Serializer):
 
     def validate(self, data):
         user = User.objects.filter(email=data['email']).first()
-        if user and user.check_password(data['password']):
-            refresh = RefreshToken.for_user(user)
-            return {
-                'refresh':str(refresh),
-                'access':str(refresh.access_token),
-                'user':UserSerializer(user).data
 
-            }
-        raise serializers.ValidationError('Invalid credentials')
+        if not user or not user.check_password(data['password']):
+            raise serializers.ValidationError('Invalid credentials')
+        
+
+        return {'user': user}
+        
     
             
