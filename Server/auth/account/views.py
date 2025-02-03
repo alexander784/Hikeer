@@ -7,7 +7,6 @@ from rest_framework import status
 from django.contrib.auth import get_user_model,authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.http import JsonResponse
-import json
 
 # Create your views here.
 User = get_user_model()
@@ -46,4 +45,7 @@ def get_user_details(request):
     user = request.user
     serializer = UserSerializer(user)
     return Response(serializer.data)
+
+
+
 
